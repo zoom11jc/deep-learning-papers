@@ -38,10 +38,20 @@
 - Weakly Supervised Localization
 - Neural Styles
 - Image Captioning
+- Show and Tell: Show and Tell: A Neural Image Caption Generator
 
 ## GAN
 
-## RNN
+## NLP
+### RNN Architecture
+- Seq2Seq: 
+ - Sequence to Sequence Learning with Neural Networks
+ - A Neural Conversational Model
+- Attention:
+ - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate
+ - (Luong) Effective Approaches to Attention-based Neural Machine Translation
+- Memory Network:
+
 ### Word Embedding
 
 ## Optimization, Attention
