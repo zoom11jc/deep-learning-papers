@@ -1,9 +1,5 @@
 # deep-learning-papers
 
-읽을것 
- - visualizing and understanding cnn, 
- - weakly detection 2개 
-
 ## Image
 ### CNN Architecture
 - AlexNet:
@@ -36,8 +32,13 @@
 - Mobilenets: Efficient convolutional neural networks for mobile vision applications
 
 ### Etc.
-- Weakly Supervised Localization
+- Weakly Supervised
+ - Is object localization for free?
+ - Learning Deep Features for Discriminative Localization
+ - From Image-level to Pixel-level Labeling with Convolutional Networks
 - Neural Styles
+ - https://harishnarayanan.org/writing/artistic-style-transfer/
+ - http://www.chioka.in/tensorflow-implementation-neural-algorithm-of-artistic-style
 - Image Captioning
 - Show and Tell: Show and Tell: A Neural Image Caption Generator
 
@@ -45,13 +46,13 @@
 
 ## NLP
 ### RNN Architecture
-- Seq2Seq: 
+- Seq2Seq
  - Sequence to Sequence Learning with Neural Networks
  - A Neural Conversational Model
-- Attention:
+- Attention
  - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate
  - (Luong) Effective Approaches to Attention-based Neural Machine Translation
-- Memory Network:
+- Memory Network
 
 ### Word Embedding
 
