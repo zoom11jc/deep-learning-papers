@@ -13,7 +13,7 @@
 - ResNet:
 - InceptionNet:
 - DenseNet:
-- NASNet: 
+- NASNet: Learning Transferable Architectures for Scalable Image Recognition
 - CapsNet:
 
 ### Object Detection
