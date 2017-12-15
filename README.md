@@ -37,6 +37,7 @@
   - Learning Deep Features for Discriminative Localization
   - From Image-level to Pixel-level Labeling with Convolutional Networks
 - Neural Styles
+  - A Neural Algorithm of Artistic Style (2015)
   - https://harishnarayanan.org/writing/artistic-style-transfer/
   - http://www.chioka.in/tensorflow-implementation-neural-algorithm-of-artistic-style
 - Image Captioning
