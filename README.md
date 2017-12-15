@@ -1,13 +1,14 @@
 # deep-learning-papers
 
 읽을것 
- - visualizing and understanding cnn, Network in Network
+ - visualizing and understanding cnn, 
  - weakly detection 2개 
 
 ## Image
 ### CNN Architecture
 - AlexNet:
-- ZFNet:
+- ZFNet: Visualizing and Understanding Convolutional Networks
+- NIN: Network in Network
 - VggNet:
 - GoogLeNet
 - ResNet:
