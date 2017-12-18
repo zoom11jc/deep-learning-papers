@@ -53,7 +53,7 @@
   - A Neural Conversational Model
 - Attention
   - (Luong) Effective Approaches to Attention-based Neural Machine Translation (2015)
-  - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate (2015)
+  - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate (2014)
   - Transformer: Attention Is All You Need (2017)
 - Memory Network
   - Memory Networks (2014) 
