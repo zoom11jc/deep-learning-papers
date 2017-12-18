@@ -48,12 +48,24 @@
 ## NLP
 ### RNN Architecture
 - Seq2Seq
-  - Sequence to Sequence Learning with Neural Networks
+  - Learning Phrase Representations Using RNN Encoder-Decoder for Statistical Machine Translation (2014)
+  - Sequence to Sequence Learning with Neural Networks (2014)
   - A Neural Conversational Model
 - Attention
-  - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate
-  - (Luong) Effective Approaches to Attention-based Neural Machine Translation
+  - (Luong) Effective Approaches to Attention-based Neural Machine Translation (2015)
+  - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate (2015)
+  - Transformer: Attention Is All You Need (2017)
 - Memory Network
+  - Memory Networks (2014) 
+  - End-To-End Memory Networks (2015)
+- Residual Connection
+  - Deep Recurrent Models with Fast-Forward Connections for NeuralMachine Translation (2016)
+  - Google's Neural MachineTranslation: Bridging the Gap between Human and Machine Translation (2016)
+- CNN
+  - Convolutional Neural Networks for Sentence Classification (2014)
+  - ByteNet: Neural Machine Translation in Linear Time (2017)
+  - Depthwise Separable Convolutions for Neural Machine Translation (2017)
+  - SliceNet: Convolutional Sequence to Sequence Learning (2017)
 
 ### Word Embedding
 
