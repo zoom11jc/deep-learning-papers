@@ -36,10 +36,10 @@
 - Mobilenets: Efficient convolutional neural networks for mobile vision applications
 
 ### Etc.
-- Weakly Supervised
-  - Is object localization for free?
-  - From Image-level to Pixel-level Labeling with Convolutional Networks
-  - CAM: Learning Deep Features for Discriminative Localization (2016)
+- Weakly Supervised Localization
+  - From Image-level to Pixel-level Labeling with Convolutional Networks (2015)
+  - GMP-CAM: Is object localization for free? (2015)
+  - GAP-CAM: Learning Deep Features for Discriminative Localization (2016)
   - Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization (2017)
 - Neural Styles
   - A Neural Algorithm of Artistic Style (2015)
