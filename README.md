@@ -34,8 +34,9 @@
 ### Etc.
 - Weakly Supervised
   - Is object localization for free?
-  - Learning Deep Features for Discriminative Localization
   - From Image-level to Pixel-level Labeling with Convolutional Networks
+  - CAM: Learning Deep Features for Discriminative Localization (2016)
+  - Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization (2017)
 - Neural Styles
   - A Neural Algorithm of Artistic Style (2015)
   - https://harishnarayanan.org/writing/artistic-style-transfer/
