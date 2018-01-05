@@ -47,15 +47,11 @@
 * YOLO9000:
 
 
-### Semantic Segmentation
-
-
 ### [Style Transfer](./doc/style_transfer.md)
 * A Neural Algorithm of Artistic Style (2015)
 
-### Regularization
-* Dropout:
-* Batch Normalization: ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
+
+### Semantic Segmentation
 
 
 ### Siamese, Triplet Network
@@ -107,8 +103,10 @@
 ### Word Embedding
 
 
-## Optimization, Attention
+## Optimization, Regularization, Attention
 * An overview of gradient descent optimization algorithms ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/An%20overview%20of%20gradient%20descent%20optimization%20algorithms.pdf))
+* Dropout:
+* Batch Normalization: ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
 
 
 
