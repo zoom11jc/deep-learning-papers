@@ -3,7 +3,7 @@
 ## Image
 ### CNN Architecture
 * AlexNet: ImageNet Classification with Deep Convolutional Neural Networks
-* ZFNet: Visualizing and Understanding Convolutional Networks
+* ZFNet: Visualizing and Understanding Convolutional Networks ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Visualizing%20and%20Understanding%20Convolutional%20Networks.pdf), code)
 * NIN: Network in Network
 * VggNet:
 * GoogLeNet: Going Deeper with Convolutions
@@ -80,7 +80,7 @@
   - A Neural Conversational Model
 * Attention
   - (Luong) Effective Approaches to Attention-based Neural Machine Translation (2015)
-  - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate (2014)
+  - (Bahdanau) Neural Machine Translation by Jointly Learning to Align and Translate (2014) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Neural%20Machine%20Translation%20by%20Jointly%20Learning%20to%20Align%20and%20Translate%20(2014).pdf), code)
   - Transformer: Attention Is All You Need (2017)
 * Memory Network
   - Memory Networks (2014) 
