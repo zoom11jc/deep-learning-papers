@@ -2,7 +2,7 @@
 
 ## Image
 ### CNN Architecture
-* AlexNet:
+* AlexNet: ImageNet Classification with Deep Convolutional Neural Networks
 * ZFNet: Visualizing and Understanding Convolutional Networks
 * NIN: Network in Network
 * VggNet:
@@ -100,4 +100,21 @@
 
 ## Optimization, Attention
 * An overview of gradient descent optimization algorithms ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/An%20overview%20of%20gradient%20descent%20optimization%20algorithms.pdf))
+
+
+
+
+
+---
+
+## TODO list
+* A Neural Algorithm of Artistic Style
+* AttentionNet- Aggregating Weak Directions for Accurate Object Detection
+* DeCAF - A Deep Convolutional Activation Feature for Generic Visual Recognition
+* CAM 관련 - From Image-level to Pixel-level Labeling with Convolutional Networks
+* Fully Convolutional Networks for Semantic Segmentation
+* Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs
+* Generative Adversarial Text to Image Synthesis
+* Multimodal Compact Bilinear Pooling for VQA 
+
 
