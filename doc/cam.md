@@ -1,4 +1,4 @@
-# CAM
+# Weakly Supervised Localization
 
 ## CAM
 
