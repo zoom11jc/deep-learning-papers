@@ -22,7 +22,7 @@
 ### Object Detection
 * OVERFIT
 * SPP
-* [R-CNN](https://blog.athelas.com/a-brief-history-of-cnns-in-image-segmentation-from-r-cnn-to-mask-r-cnn-34ea83205de4)
+* [R-CNN](./doc/rcnn.md)
   - R-CNN: Rich feature hierarchies for accurate object detection and semantic segmentation
   - Fast R-CNN
   - Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
@@ -60,10 +60,8 @@
 
 
 ### Etc.
-* Neural Styles
+* [Neural Styles](./doc/style_transfer.md)
   - A Neural Algorithm of Artistic Style (2015)
-  - https://harishnarayanan.org/writing/artistic-style-transfer/
-  - http://www.chioka.in/tensorflow-implementation-neural-algorithm-of-artistic-style
 * Image Captioning
 * Show and Tell: Show and Tell: A Neural Image Caption Generator
 
