@@ -3,7 +3,7 @@
 ## Image
 ### CNN Architecture
 * AlexNet: ImageNet Classification with Deep Convolutional Neural Networks
-* ZFNet: Visualizing and Understanding Convolutional Networks ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Visualizing%20and%20Understanding%20Convolutional%20Networks.pdf), code)
+* ZFNet (DeconvNet): Visualizing and Understanding Convolutional Networks ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Visualizing%20and%20Understanding%20Convolutional%20Networks.pdf), code)
 * NIN: Network in Network
 * VggNet:
 * GoogLeNet: Going Deeper with Convolutions
@@ -17,6 +17,21 @@
 * DenseNet:
 * NASNet: Learning Transferable Architectures for Scalable Image Recognition ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/NASNET%20-%20Learning%20Transferable%20Architectures%20for%20Scalable%20Image%20Recognition.pdf), code)
 * CapsNet:
+
+
+### [Visualizing CNNs](./docs/visualizing_cnn.md)
+* DeconvNet
+* BP: Deep inside convolutional networks: Visualising image classification models and saliency maps
+* Guided-BP (DeconvNet+BP): Striving for simplicity: The all convolutional net
+* Visualizing Residual Networks 
+
+
+### Weakly Supervised Localization
+* From Image-level to Pixel-level Labeling with Convolutional Networks (2015)
+* GMP-CAM: Is object localization for free? - Weakly-supervised learning with convolutional neural networks (2015) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Weakly-supervised%20learning%20with%20convolutional%20neural%20networks.pdf), code)
+* GAP-CAM: Learning Deep Features for Discriminative Localization (2016) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/CAM_%20Learning%20Deep%20Features%20for%20Discriminative%20Localization%20.pdf), code)
+* c-MWP: Top-down Neural Attention by Excitation Backprop
+* Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization (2017) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Grad-CAM_%20Visual%20Explanations%20from%20Deep%20Networks%20via%20Gradient-based%20Localization.pdf), code)
 
 
 ### Object Detection
@@ -33,13 +48,6 @@
 
 
 ### Semantic Segmentation
-
-
-### Weakly Supervised Localization
-* From Image-level to Pixel-level Labeling with Convolutional Networks (2015)
-* GMP-CAM: Is object localization for free? - Weakly-supervised learning with convolutional neural networks (2015) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Weakly-supervised%20learning%20with%20convolutional%20neural%20networks.pdf), code)
-* GAP-CAM: Learning Deep Features for Discriminative Localization (2016) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/CAM_%20Learning%20Deep%20Features%20for%20Discriminative%20Localization%20.pdf), code)
-* Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization (2017) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Grad-CAM_%20Visual%20Explanations%20from%20Deep%20Networks%20via%20Gradient-based%20Localization.pdf), code)
 
 
 ### Regularization
@@ -116,5 +124,6 @@
 * Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs
 * Generative Adversarial Text to Image Synthesis
 * Multimodal Compact Bilinear Pooling for VQA 
+* A guide to convolution arithmetic for deep learning(https://arxiv.org/pdf/1603.07285.pdf, https://tensorflow.blog/a-guide-to-convolution-arithmetic-for-deep-learning/)
 
 
