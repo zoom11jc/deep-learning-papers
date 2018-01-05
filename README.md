@@ -34,10 +34,10 @@
 * Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization (2017) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Grad-CAM_%20Visual%20Explanations%20from%20Deep%20Networks%20via%20Gradient-based%20Localization.pdf), code)
 
 
-### Object Detection
+### [Object Detection](./doc/detection.md)
 * OVERFIT
 * SPP
-* [R-CNN](./doc/rcnn.md)
+* R-CNN
   - R-CNN: Rich feature hierarchies for accurate object detection and semantic segmentation
   - Fast R-CNN
   - Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
@@ -49,6 +49,8 @@
 
 ### Semantic Segmentation
 
+
+### [Style Transfer](./doc/style_transfer.md)
 
 ### Regularization
 * Dropout:
