@@ -19,14 +19,14 @@
 * CapsNet:
 
 
-### [Visualizing CNNs](./docs/visualizing_cnn.md)
+### [Visualizing CNNs](./doc/visualizing_cnn.md)
 * DeconvNet
 * BP: Deep inside convolutional networks: Visualising image classification models and saliency maps
 * Guided-BP (DeconvNet+BP): Striving for simplicity: The all convolutional net
 * Visualizing Residual Networks 
 
 
-### Weakly Supervised Localization
+### [Weakly Supervised Localization](./doc/cam.md)
 * From Image-level to Pixel-level Labeling with Convolutional Networks (2015)
 * GMP-CAM: Is object localization for free? - Weakly-supervised learning with convolutional neural networks (2015) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Weakly-supervised%20learning%20with%20convolutional%20neural%20networks.pdf), code)
 * GAP-CAM: Learning Deep Features for Discriminative Localization (2016) ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/CAM_%20Learning%20Deep%20Features%20for%20Discriminative%20Localization%20.pdf), code)
