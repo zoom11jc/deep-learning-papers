@@ -51,6 +51,7 @@
 
 
 ### [Style Transfer](./doc/style_transfer.md)
+* A Neural Algorithm of Artistic Style (2015)
 
 ### Regularization
 * Dropout:
@@ -70,8 +71,6 @@
 
 
 ### Etc.
-* [Neural Styles](./doc/style_transfer.md)
-  - A Neural Algorithm of Artistic Style (2015)
 * Image Captioning
 * Show and Tell: Show and Tell: A Neural Image Caption Generator
 
@@ -118,7 +117,6 @@
 ---
 
 ## TODO list
-* A Neural Algorithm of Artistic Style
 * AttentionNet- Aggregating Weak Directions for Accurate Object Detection
 * DeCAF - A Deep Convolutional Activation Feature for Generic Visual Recognition
 * CAM 관련 - From Image-level to Pixel-level Labeling with Convolutional Networks
