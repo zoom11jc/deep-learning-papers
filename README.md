@@ -47,14 +47,11 @@
 * YOLO9000:
 
 
-### Semantic Segmentation
-
-
 ### [Style Transfer](./doc/style_transfer.md)
+* A Neural Algorithm of Artistic Style (2015)
 
-### Regularization
-* Dropout:
-* Batch Normalization: ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
+
+### Semantic Segmentation
 
 
 ### Siamese, Triplet Network
@@ -70,8 +67,6 @@
 
 
 ### Etc.
-* [Neural Styles](./doc/style_transfer.md)
-  - A Neural Algorithm of Artistic Style (2015)
 * Image Captioning
 * Show and Tell: Show and Tell: A Neural Image Caption Generator
 
@@ -108,8 +103,10 @@
 ### Word Embedding
 
 
-## Optimization, Attention
+## Optimization, Regularization, Attention
 * An overview of gradient descent optimization algorithms ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/An%20overview%20of%20gradient%20descent%20optimization%20algorithms.pdf))
+* Dropout:
+* Batch Normalization: ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
 
 
 
@@ -118,7 +115,6 @@
 ---
 
 ## TODO list
-* A Neural Algorithm of Artistic Style
 * AttentionNet- Aggregating Weak Directions for Accurate Object Detection
 * DeCAF - A Deep Convolutional Activation Feature for Generic Visual Recognition
 * CAM 관련 - From Image-level to Pixel-level Labeling with Convolutional Networks
