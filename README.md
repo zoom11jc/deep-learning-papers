@@ -5,7 +5,7 @@
 * AlexNet: ImageNet Classification with Deep Convolutional Neural Networks
 * ZFNet (DeconvNet): Visualizing and Understanding Convolutional Networks ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Visualizing%20and%20Understanding%20Convolutional%20Networks.pdf), code)
 * NIN: Network in Network
-* VggNet:
+* VggNet: Very Deep Convolutional Networks for Large-Scale Image Recognition
 * GoogLeNet: Going Deeper with Convolutions
 * ResNet:
   - ResNet-v1
