@@ -2,7 +2,7 @@
 
 - 관련 논문들 순서대로 총정리: https://blog.lunit.io/2017/04/09/back-projecting-mid-level-activations/
 
-## ZFNet
+## DeconvNet
 
 - 저자 직강: https://www.youtube.com/watch?v=ghEmQSxT6tw
 - 라온피플: https://laonple.blog.me/220680023908
@@ -13,3 +13,7 @@
 - 구현: https://github.com/InFoCusp/tf_cnnvis
 - https://www.slideshare.net/smrl7460/paper-review-visualizing-and-understanding-convolutional-networks-82147562
 - http://ferguson.tistory.com/5
+
+## Guided-Backprop
+
+- https://medium.com/@konpat/striving-for-simplicity-the-all-convolutional-net-springenberg-et-al-2014-85da395be338
