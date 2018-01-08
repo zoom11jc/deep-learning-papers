@@ -1,6 +1,8 @@
 # Visualizing CNNs
 
 - 관련 논문들 순서대로 총정리: https://blog.lunit.io/2017/04/09/back-projecting-mid-level-activations/
+- understanding convolutions (colah): http://colah.github.io/posts/2014-07-Understanding-Convolutions/
+- colvolution-arithmetic: https://tensorflow.blog/a-guide-to-convolution-arithmetic-for-deep-learning/
 
 ## DeconvNet
 
