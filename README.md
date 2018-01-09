@@ -21,7 +21,7 @@
 
 ### [Visualizing CNNs](./doc/visualizing_cnn.md)
 * DeconvNet
-* BP: Deep inside convolutional networks: Visualising image classification models and saliency maps
+* BP: Deep inside convolutional networks: Visualising image classification models and saliency maps ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Deep%20Inside%20Convolutional%20Networks-%20Visualising%20Image%20Classification%20Models%20and%20Saliency%20Maps.pdf), code)
 * Guided-BP (DeconvNet+BP): Striving for simplicity: The all convolutional net ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Striving%20for%20Simplicity%20-%20The%20All%20Convolutional%20Net.pdf), code)
 * Visualizing Residual Networks 
 
@@ -66,9 +66,10 @@
 * Mobilenets: Efficient convolutional neural networks for mobile vision applications
 
 
-### Etc.
+### [Etc.](./doc/etc/md)
 * Image Captioning
 * Show and Tell: Show and Tell: A Neural Image Caption Generator
+* A guide to convolution arithmetic for deep learning ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.pdf))
 
 
 ## GAN
@@ -122,6 +123,5 @@
 * Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs
 * Generative Adversarial Text to Image Synthesis
 * Multimodal Compact Bilinear Pooling for VQA 
-* A guide to convolution arithmetic for deep learning(https://arxiv.org/pdf/1603.07285.pdf, https://tensorflow.blog/a-guide-to-convolution-arithmetic-for-deep-learning/)
 
 
