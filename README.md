@@ -8,8 +8,8 @@
 * VggNet: Very Deep Convolutional Networks for Large-Scale Image Recognition
 * GoogLeNet: Going Deeper with Convolutions
 * ResNet:
-  - ResNet-v1
-  - ResNet-v2
+  - ResNet-v1: Deep Residual Learning for Image Recognition
+  - ResNet-v2: Identity Mappings in Deep Residual Networks
 * InceptionNet:
   - Inception-v1: GoogLeNet
   - Inception-v2, v3: Rethinking the Inception Architecture for Computer Vision ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Rethinking%20the%20Inception%20Architecture%20for%20Computer%20Vision.pdf), code)
