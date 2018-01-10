@@ -23,3 +23,8 @@
 ## Guided-Backprop
 
 - https://medium.com/@konpat/striving-for-simplicity-the-all-convolutional-net-springenberg-et-al-2014-85da395be338
+
+
+## ResNet visualization
+- Visualizing Residual Networks(paper): 학교 수업 과제로 만든거라 별 내용은 없네...
+

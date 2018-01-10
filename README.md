@@ -23,7 +23,7 @@
 * DeconvNet
 * BP: Deep inside convolutional networks: Visualising image classification models and saliency maps ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Deep%20Inside%20Convolutional%20Networks-%20Visualising%20Image%20Classification%20Models%20and%20Saliency%20Maps.pdf), code)
 * Guided-BP (DeconvNet+BP): Striving for simplicity: The all convolutional net ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Striving%20for%20Simplicity%20-%20The%20All%20Convolutional%20Net.pdf), code)
-* Visualizing Residual Networks 
+* Understanding Neural Networks Through Deep Visualization (paper)
 
 
 ### [Weakly Supervised Localization](./doc/cam.md)
