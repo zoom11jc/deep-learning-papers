@@ -26,5 +26,5 @@
 
 
 ## ResNet visualization
-- Visualizing Residual Networks(paper): 학교 수업 과제로 만든거라 별 내용은 없네...
+- Visualizing Residual Networks([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Visualizing%20Residual%20Networks.pdf)): 학생들이 프로젝트 과제로 쓴거라 별 내용은 없네...
 
