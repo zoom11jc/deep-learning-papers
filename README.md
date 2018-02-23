@@ -35,7 +35,7 @@
 
 
 ### [Object Detection](./doc/detection.md)
-* OVERFIT
+* OVERFEAT
 * SPP
 * R-CNN
   - R-CNN: Rich feature hierarchies for accurate object detection and semantic segmentation
