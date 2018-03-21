@@ -35,7 +35,7 @@
 
 
 ### [Object Detection](./doc/detection.md)
-* OVERFEAT
+* OverFeat- Integrated Recognition, Localization and Detection using Convolutional Networks ([paper](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/OverFeat- Integrated Recognition, Localization and Detection using Convolutional Networks), code)
 * SPP
 * R-CNN
   - R-CNN: Rich feature hierarchies for accurate object detection and semantic segmentation
