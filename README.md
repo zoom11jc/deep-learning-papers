@@ -1,6 +1,6 @@
 # deep-learning-papers
 
-## Image
+## Computer Vision
 ### CNN Architecture
 * AlexNet: ImageNet Classification with Deep Convolutional Neural Networks
 * ZFNet (DeconvNet): Visualizing and Understanding Convolutional Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Visualizing%20and%20Understanding%20Convolutional%20Networks.pdf), code)
@@ -72,10 +72,6 @@
 * A guide to convolution arithmetic for deep learning ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.pdf))
 
 
-## GAN
-* GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), code)
-
-
 ## NLP
 * Recent Trends in Deep Learning Based Natural Language Processing ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Recent%20Trends%20in%20Deep%20Learning%20Based%20Natural%20Language%20Processing.pdf))
 
@@ -102,6 +98,10 @@
 
 
 ### Word Embedding
+
+
+## GAN
+* GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), code)
 
 
 ## Optimization, Regularization, Attention
