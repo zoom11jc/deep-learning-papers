@@ -47,6 +47,16 @@
 * YOLO9000:
 
 
+## [GAN](./doc/gan.md)
+* GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), code)
+* DCGAN: 
+* cGAN: 
+* infoGAN: 
+* VAE: 
+* Improved GAN: 
+* WGAN: 
+
+
 ### [Style Transfer](./doc/style_transfer.md)
 * A Neural Algorithm of Artistic Style (2015)
 
@@ -98,10 +108,6 @@
 
 
 ### Word Embedding
-
-
-## GAN
-* GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), code)
 
 
 ## Optimization, Regularization, Attention
