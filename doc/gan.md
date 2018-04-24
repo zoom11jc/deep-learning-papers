@@ -9,10 +9,9 @@
 AtoZ: 
  - http://nbviewer.jupyter.org/github/metamath1/ml-simple-works/blob/master/GAN/GANs.ipynb
 
-GAN tutorial 2016 한글 정리: https://kakalabblog.wordpress.com/2017/07/27/gan-tutorial-2016/
-
-GAN tutorial 2017
- - https://nips.cc/Conferences/2016/Schedule?showEvent=6202
+GAN tutorial 
+ - 2016 한글 정리: https://kakalabblog.wordpress.com/2017/07/27/gan-tutorial-2016/
+ - 2017: https://nips.cc/Conferences/2016/Schedule?showEvent=6202
 
 블로그
  - 컨셉과 원리: http://learnai.tistory.com/ 
@@ -37,5 +36,5 @@ DCGAN 논문 리뷰 한글:
 ## cGAN
 - 김승일 소장님 발표: https://www.youtube.com/watch?v=iCgT8G4PkqI
 - cgan 정리 블로그:
- - http://t-lab.tistory.com/29
- - https://kangbk0120.github.io/articles/2017-08/conditional-gan
+  - http://t-lab.tistory.com/29
+  - https://kangbk0120.github.io/articles/2017-08/conditional-gan
