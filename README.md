@@ -49,7 +49,7 @@
 
 ## [GAN](./doc/gan.md)
 * GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), [code](./code/gan.ipynb))
-* DCGAN: Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks ([note]("./paper/UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS.pdf"), code)
+* DCGAN: Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Unsupervised%20Representation%20Learning%20with%20Deep%20Convolutional%20Generative%20Adversarial%20Networks.pdf), code)
 * cGAN: 
 * infoGAN: 
 * VAE: 
