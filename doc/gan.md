@@ -37,14 +37,14 @@ DCGAN 논문 리뷰 한글:
 
 Introduction
 - GAN
- - 주목받는 이유
-  - 까다로운 확률 계산을 approximating하는 것은 어려운데, 이것을 회피할 수 있는 generative model 학습 framework로 떠오르고 있다. 
- - 장점
-  - Markov chain도 필요없고
-  - gradient를 얻기 위해 backprop만 사용되고
-  - 학습 과정에서 inference도 필요없고
-  - 다양한 factor와 interation을 모델에 쉽게 포함시킬 수 있고
-  - S.O.T.A log-likelihood estimate와 진짜같은 sample을 만들 수 있다.  
+  - 주목받는 이유
+    - 까다로운 확률 계산을 approximating하는 것은 어려운데, 이것을 회피할 수 있는 generative model 학습 framework로 떠오르고 있다. 
+  - 장점
+    - Markov chain도 필요없고
+    - gradient를 얻기 위해 backprop만 사용되고
+    - 학습 과정에서 inference도 필요없고
+    - 다양한 factor와 interation을 모델에 쉽게 포함시킬 수 있고
+    - S.O.T.A log-likelihood estimate와 진짜같은 sample을 만들 수 있다.  
 
 - 김승일 소장님 발표: https://www.youtube.com/watch?v=iCgT8G4PkqI
 - cgan 정리 블로그:
