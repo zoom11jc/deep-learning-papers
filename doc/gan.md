@@ -243,18 +243,37 @@ cGAN은 아래 연구들로 발전된다.
     + variational parameter phi가 ![q_\phi(z|x) \approx p_\theta(z|x)](http://latex.codecogs.com/gif.latex?q_%5Cphi%28z%7Cx%29%20%5Capprox%20p_%5Ctheta%28z%7Cx%29) 요렇게 되도록 optimize한다. 
     + distribution q_\phi(z|x)를 neural network로 parameterize하면 아래와 같이 표현할 수 있다. 
         * ![\begin{matrix} (\mu, log\ \sigma) = EncoderNeuralNet_\phi(\mathbf{x}) \\ q_\phi(\mathbf{z}|\mathbf{x}) = \mathcal{N}(\mathbf{z};\mu, diag(\sigma)) \end{matrix}](http://latex.codecogs.com/gif.latex?%5Cbegin%7Bmatrix%7D%20%28%5Cmu%2C%20log%5C%20%5Csigma%29%20%3D%20EncoderNeuralNet_%5Cphi%28%5Cmathbf%7Bx%7D%29%20%5C%5C%20q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29%20%3D%20%5Cmathcal%7BN%7D%28%5Cmathbf%7Bz%7D%3B%5Cmu%2C%20diag%28%5Csigma%29%29%20%5Cend%7Bmatrix%7D)
-- 여기까지의 의식의 흐름은 다음과 같다. 궁극적으로 알고 싶은건 p*(x)를 근사하는 pθ(x)를 최대화하는 θ를 찾고 싶은건데 p(x)를 바로 알기는 어려우니 z 도입. 즉 pθ(x,z)를 알고 싶다는 얘기. p(x,z)는 prior*decoder 즉 p(z)p(x|z)인데 p(z)를 모르니 아무 z나 넣으면 샘플 생성이 잘 안되더라. 그래서 샘플 생성을 잘 하는 z를 p(z|x)로 구하면 어떨까? 이게 인코더. 인코더에서 posterior pθ(z|x)를 구해야 하는데 이게 intractable이라서 이걸 qφ(z|x)로 approximate한다.  
+- 여기까지의 의식의 흐름은 다음과 같다. 궁극적으로 알고 싶은건 p*(x)를 근사하는 pθ(x)를 최대화하는 θ를 찾고 싶은건데 p(x)를 바로 알기는 어려우니 z 도입. 즉 pθ(x,z)를 알고 싶다는 얘기. p(x,z)는 prior*decoder 즉 p(z)p(x|z)인데 아무 z~p(z)나 넣으면 샘플 생성이 잘 안되더라. 그래서 샘플 생성을 잘 하는 z를 p(z|x)로 구하면 어떨까? 이게 인코더. 인코더에서 posterior pθ(z|x)를 구해야 하는데 이게 intractable이라서 이걸 qφ(z|x)로 approximate한다.  
 ![alt text][image_vae101]
 
 #### 2.2 The variational bound
-- marginal likelihood는 개별 datapoint들의 marginal likelihood의 합으로 구성된다. ![log\ p_\theta(\mathbf{x}^{(1)}, ... , \mathbf{x}^{(N)}) = \sum_{ }_{i=1}^{N}\ log\ p_\theta(\mathbf{x}^{(i)})](http://latex.codecogs.com/gif.latex?log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%281%29%7D%2C%20...%20%2C%20%5Cmathbf%7Bx%7D%5E%7B%28N%29%7D%29%20%3D%20%5Csum_%7B%20%7D_%7Bi%3D1%7D%5E%7BN%7D%5C%20log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%28i%29%7D%29) 이 식은 아래와 같이 쓸 수 있다. 
+- marginal likelihood는 개별 datapoint들의 marginal likelihood의 합으로 구성된다. 즉 ![log\ p_\theta(\mathbf{x}^{(1)}, ... , \mathbf{x}^{(N)}) = \sum_{ }_{i=1}^{N}\ log\ p_\theta(\mathbf{x}^{(i)})](http://latex.codecogs.com/gif.latex?log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%281%29%7D%2C%20...%20%2C%20%5Cmathbf%7Bx%7D%5E%7B%28N%29%7D%29%20%3D%20%5Csum_%7B%20%7D_%7Bi%3D1%7D%5E%7BN%7D%5C%20log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%28i%29%7D%29)이며, 각 likelihood 식은 아래와 같이 전개된다. 
 - ![alt text][image_vae01]
-    + first RHS term: approximage와 true posterior의 KL divergence 
-    + second RHS term: datapoint i의 marginal likelihood에 대한 (variational) lower bound
+  + 수식 전개는 ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 7 page 참고 
+  + first RHS term: approximate와 true posterior의 KL divergence 
+  + second RHS term: datapoint i의 marginal likelihood에 대한 (variational) lower bound라고도 하며, 베이지안에서 marginal likelihood를 model evidence라고 하므로 evidence lower bound(ELBO)라고도 한다. 
 - 고로 식 (1)은 아래와 같이 다시 쓸 수 있는데 
 - ![alt text][image_vae02]
+  + 이렇게 하는 이유는 앞에서 봤듯이 pθ(x)에 직접 maximum likelihood를 적용할 수 없기 때문에 ELBO를 최대화 할것이다. L을 최대화하면 maximum likelihood도 최대화되겠지.
+  + 수식 전개는 ![pr12-vae](https://www.youtube.com/watch?v=KYA-GEhObIs)의 ELBO - eq(2) 부분 참고 
 - 식 (2)를 다시 쓰면 아래와 같다. 
 - ![alt text][image_vae03]
+  + 수식 전개는 ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 8 page 참고 
+  + ELBO를 이렇게 2가지 방식으로 전개한 이유 
+    * 식 (2)는 몬테카를로 estimation을 적용해야 하는 식 -> 샘플링하기 때문에 variance 증가 
+    * 식 (2)은 D_KL 항을 analytic하게 계산 가능하다. (단, q(z|x)와 p(z)를 잘 알려진 다루기 쉬운 분포로 가정하기 때문이다. 관련 내용은 ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 11 page 참고)
+- ELBO를 최대화하는 것은 2 가지를 측면을 동시에 optimize한다. 
+  + pθ(x) 최대화: generative model이 점점 더 좋아진다.  
+  + KL divergence 최소화: qφ(z|x)를 점점 pθ(z|x)와 비슷하게 하므로 qφ(z|x)가 점점 좋아진다.
+  + ![Decomposition of log-likelihood 참고](http://sanghyukchun.github.io/70/)참고
+- 이제 ELBO를 variational parameter φ와 generative parameter θ에 대해 미분하고 최적화해보자. (![kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) 18 page 참고)
+  + ∇θELBO: ∇θ가 E항 안으로 들어갈 수 있기 때문에 수식이 간단해짐
+  + ∇φELBO: E가 qφ(z|x)에 대한 expectation이기 때문에 ∇φ가 E항 안으로 들어갈 수 없다. problematic -> reparameterization trick이 필요하다. 
+
+#### 2.3 The SGVB estimator and AEVB algorithm
+
+
+
 
 
 
