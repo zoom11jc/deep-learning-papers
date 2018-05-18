@@ -148,6 +148,4 @@ cGAN은 아래 연구들로 발전된다.
 
 
 
-$$$
-p_theta(x)
-$$$
+![](https://latex.codecogs.com/svg.latex?y%3Dx%5E2)
