@@ -155,3 +155,4 @@ cGAN은 아래 연구들로 발전된다.
   - testtest3 ![](http://latex.codecogs.com/svg.latex?%5Ctiny%5Cint%20p_%5Ctheta%20%28z%29%20p_%5Ctheta%28x%7Cz%29) test
   - testtest4 ![](http://latex.codecogs.com/svg.latex?%5Csmall%20%5Cint%20p_%5Ctheta%28z%29p_%5Ctheta%28x%7Cz%29) test
   - testtest5 ![](http://latex.codecogs.com/svg.latex?%5Ctiny%20%5Cint%20p_%5Ctheta%28z%29p_%5Ctheta%28x%7Cz%29) test
+  - testtest6 ![](http://latex.codecogs.com/gif.latex?%5Csmall%20%5Csmallint%20p_%5Ctheta%28z%29p_%5Ctheta%28x%7Cz%29) test
