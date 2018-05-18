@@ -8,6 +8,17 @@
 [image5]: ./images/gan/cgan_mnist.png "cgan_mnist.png"
 [image6]: ./images/gan/cgan_txt2img.png "cgan_txt2img.png"
 [image7]: ./images/gan/cgan_pix2pix.png "cgan_pix2pix.png"
+[image_vae01]: ./images/gan/vae_eq_01.png "vae_eq_01.png"
+[image_vae02]: ./images/gan/vae_eq_02.png "vae_eq_02.png"
+[image_vae03]: ./images/gan/vae_eq_03.png "vae_eq_03.png"
+[image_vae04]: ./images/gan/vae_eq_04.png "vae_eq_04.png"
+[image_vae05]: ./images/gan/vae_eq_05.png "vae_eq_05.png"
+[image_vae06]: ./images/gan/vae_eq_06.png "vae_eq_06.png"
+[image_vae07]: ./images/gan/vae_eq_07.png "vae_eq_07.png"
+[image_vae08]: ./images/gan/vae_eq_08.png "vae_eq_08.png"
+[image_vae09]: ./images/gan/vae_eq_09.png "vae_eq_09.png"
+[image_vae10]: ./images/gan/vae_eq_10.png "vae_eq_10.png"
+[image_vae11]: ./images/gan/vae_alg_01.png "vae_alg_01.png"
 
 # GAN
 
