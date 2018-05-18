@@ -243,7 +243,7 @@ cGAN은 아래 연구들로 발전된다.
     + variational parameter phi가 ![q_\phi(z|x) \approx p_\theta(z|x)](http://latex.codecogs.com/gif.latex?q_%5Cphi%28z%7Cx%29%20%5Capprox%20p_%5Ctheta%28z%7Cx%29) 요렇게 되도록 optimize한다. 
     + distribution q_\phi(z|x)를 neural network로 parameterize하면 아래와 같이 표현할 수 있다. 
         * ![\begin{matrix} (\mu, log\ \sigma) = EncoderNeuralNet_\phi(\mathbf{x}) \\ q_\phi(\mathbf{z}|\mathbf{x}) = \mathcal{N}(\mathbf{z};\mu, diag(\sigma)) \end{matrix}](http://latex.codecogs.com/gif.latex?%5Cbegin%7Bmatrix%7D%20%28%5Cmu%2C%20log%5C%20%5Csigma%29%20%3D%20EncoderNeuralNet_%5Cphi%28%5Cmathbf%7Bx%7D%29%20%5C%5C%20q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29%20%3D%20%5Cmathcal%7BN%7D%28%5Cmathbf%7Bz%7D%3B%5Cmu%2C%20diag%28%5Csigma%29%29%20%5Cend%7Bmatrix%7D)
-- 여기까지의 의식의 흐름은 다음과 같다. 궁극적으로 알고 싶은건 p*(x)를 근사하는 pθ(x)를 최대화하는 θ를 찾고 싶은건데 p(x)를 바로 알기는 어려우니 z 도입. 즉 pθ(x,z)를 알고 싶다는 얘기. p(x,z)는 prior*decoder 즉 p(z)p(x|z)인데 p(z)를 모르니 아무 z나 넣으면 샘플 생성이 잘 안되더라. 그래서 샘플 생성을 잘 하는 z를 p(z|x)로 구하면 어떨까? 이게 인코더. 인코더에서 posterior pθ(z|x)를 구해야 하는데 이게 intractable이라서 이걸 qφ(z|x)로 approximate한다. 
+- 여기까지의 의식의 흐름은 다음과 같다. 궁극적으로 알고 싶은건 p*(x)를 근사하는 pθ(x)를 최대화하는 θ를 찾고 싶은건데 p(x)를 바로 알기는 어려우니 z 도입. 즉 pθ(x,z)를 알고 싶다는 얘기. p(x,z)는 prior*decoder 즉 p(z)p(x|z)인데 p(z)를 모르니 아무 z나 넣으면 샘플 생성이 잘 안되더라. 그래서 샘플 생성을 잘 하는 z를 p(z|x)로 구하면 어떨까? 이게 인코더. 인코더에서 posterior pθ(z|x)를 구해야 하는데 이게 intractable이라서 이걸 qφ(z|x)로 approximate한다.  
 ![alt text][image_vae101]
 
 #### 2.2 The variational bound
