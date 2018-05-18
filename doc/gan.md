@@ -141,3 +141,11 @@ cGAN은 아래 연구들로 발전된다.
 - cgan 정리 블로그:
   - http://t-lab.tistory.com/29
   - https://kangbk0120.github.io/articles/2017-08/conditional-gan
+
+
+
+
+
+
+
+$p_theta$
