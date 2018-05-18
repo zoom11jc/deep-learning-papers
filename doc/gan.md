@@ -19,6 +19,7 @@
 [image_vae09]: ./images/gan/vae_eq_09.png "vae_eq_09.png"
 [image_vae10]: ./images/gan/vae_eq_10.png "vae_eq_10.png"
 [image_vae11]: ./images/gan/vae_alg_01.png "vae_alg_01.png"
+[image_vae101]: ./images/gan/vae_fig_01.png "vae_fig_01.png"
 
 # GAN
 
