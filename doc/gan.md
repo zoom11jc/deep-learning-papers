@@ -214,40 +214,40 @@ cGAN은 아래 연구들로 발전된다.
 - 위 문제들을 해결하기 위해 recognition model ![q_\phi(\mathbf{z}|\mathbf{x})](http://latex.codecogs.com/svg.latex?q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29)를 도입해보자.
     + 얘는 intractable true posterior ![p_\theta(\mathbf{z}|\mathbf{x})](http://latex.codecogs.com/svg.latex?p_%5Ctheta%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29)의 approximation이다. 
     + mean-field variational inference에서 posterior를 approixmate하는 것과는 반대로, 이것은 factorial일 필요도 없고 parameter phi가 closed-form expectation으로부터 계산되지도 않는다. 
-    + 대신에 recognition model parameter ![](http://latex.codecogs.com/gif.latex?%5Cphi)를 generative model parameter ![](http://latex.codecogs.com/gif.latex?%5Ctheta)와 jointly 학습하는 방법을 소개할 것이다. 
+    + 대신에 recognition model parameter ![](http://latex.codecogs.com/svg.latex?%5Cphi)를 generative model parameter ![](http://latex.codecogs.com/svg.latex?%5Ctheta)와 jointly 학습하는 방법을 소개할 것이다. 
 - coding theory 관점에서 unobserved variables z는 latent representation 또는 code로 생각할 수 있다. 그러므로...
     + recognition model ![q_\phi(\mathbf{z}|\mathbf{x})](http://latex.codecogs.com/svg.latex?q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29)을 encoder로 표기: datapoint x가 주어졌을 때, datapoint x가 생성되어졌을 수 있는 z의 가능한 값에 대한 distribution을 생성하기 때문
     + ![p_\theta(\mathbf{x}|\mathbf{z})](http://latex.codecogs.com/svg.latex?p_%5Ctheta%28%5Cmathbf%7Bx%7D%7C%5Cmathbf%7Bz%7D%29)를 decoder로 표기: code z가 주어졌을 때, 그에 해당하는 x의 가능한 값에 대한 distribution을 생성하기 때문 
 
 #### 중간정리
 - 그러니까 정리해보면, 우리가 궁극적으로 구하려고 하는 것은...
-    + observed variable x는 unknown underlying process로 부터의 random sample이라고 가정한다. 이 underlying process의 true distribution ![p^{*}(\mathbf{x})](http://latex.codecogs.com/gif.latex?p%5E%7B*%7D%28%5Cmathbf%7Bx%7D%29)은 unkown이기 때문에 우리는 이 underlying process를 모델 ![p_\theta(\mathbf{x})](http://latex.codecogs.com/gif.latex?p_%5Ctheta%28%5Cmathbf%7Bx%7D%29)로 approximate 하려는 것이다. 
-    + ![p_\theta(\mathbf{x}) \approx  p^{*}(\mathbf{x})](http://latex.codecogs.com/gif.latex?p_%5Ctheta%28%5Cmathbf%7Bx%7D%29%20%5Capprox%20p%5E%7B*%7D%28%5Cmathbf%7Bx%7D%29) 이러한 parameter theta의 값을 찾는 과정이 바로 learning이다. 
+    + observed variable x는 unknown underlying process로 부터의 random sample이라고 가정한다. 이 underlying process의 true distribution ![p^{*}(\mathbf{x})](http://latex.codecogs.com/svg.latex?p%5E%7B*%7D%28%5Cmathbf%7Bx%7D%29)은 unkown이기 때문에 우리는 이 underlying process를 모델 ![p_\theta(\mathbf{x})](http://latex.codecogs.com/svg.latex?p_%5Ctheta%28%5Cmathbf%7Bx%7D%29)로 approximate 하려는 것이다. 
+    + ![p_\theta(\mathbf{x}) \approx  p^{*}(\mathbf{x})](http://latex.codecogs.com/svg.latex?p_%5Ctheta%28%5Cmathbf%7Bx%7D%29%20%5Capprox%20p%5E%7B*%7D%28%5Cmathbf%7Bx%7D%29) 이러한 parameter theta의 값을 찾는 과정이 바로 learning이다. 
 - 만약 fully observed model 상황이라면?
     + directed graphical model의 모든 variable들이 데이터에서 observed 된다면 그냥 straightforward optimazation하면 된다. 
-    + 보통은 maximum likelihood 방법을 사용하며, maximum likelihood ciriterion은 ![log\ p_\theta(\mathcal{D}) = \sum_{ }_{\mathbf{x}\in \mathcal{D}}^{ }\ log\ p_\theta(\mathbf{x})](http://latex.codecogs.com/gif.latex?log%5C%20p_%5Ctheta%28%5Cmathcal%7BD%7D%29%20%3D%20%5Csum_%7B%20%7D_%7B%5Cmathbf%7Bx%7D%5Cin%20%5Cmathcal%7BD%7D%7D%5E%7B%20%7D%5C%20log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%29) 이다. 이 objective의 gradient를 구해서 hill-climb 방식으로 iterative하게 local optimum을 찾아간다. 
+    + 보통은 maximum likelihood 방법을 사용하며, maximum likelihood ciriterion은 ![log\ p_\theta(\mathcal{D}) = \sum_{ }_{\mathbf{x}\in \mathcal{D}}^{ }\ log\ p_\theta(\mathbf{x})](http://latex.codecogs.com/svg.latex?log%5C%20p_%5Ctheta%28%5Cmathcal%7BD%7D%29%20%3D%20%5Csum_%7B%20%7D_%7B%5Cmathbf%7Bx%7D%5Cin%20%5Cmathcal%7BD%7D%7D%5E%7B%20%7D%5C%20log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%29) 이다. 이 objective의 gradient를 구해서 hill-climb 방식으로 iterative하게 local optimum을 찾아간다. 
         * all datapoints: batch gradient descent
         * minibatche data: stochastic gradient descent
 - latent variable model 상황이라면?
     + latent variable은 모델에서 사용되는 variable이지만 dataset에서는 관측할 수는 없기 때문에 latent variable이라고 말한다. 
     + latent variable을 사용하는 이해하기 쉬운 사례로는 [가우시안 혼합 모델](http://norman3.github.io/prml/docs/chapter09/2)이 있음.
-        * 원래 식 (9.7)이 있지만 잠재변수를 사용하면 복잡한 혼합 모델 p(x) 대신 비교적 간단한 p(x,z)의 marginalization ![\sum_{ }_{z}\ p(\mathbf{x},\mathbf{z})](http://latex.codecogs.com/gif.latex?%5Csum_%7B%20%7D_%7Bz%7D%5C%20p%28%5Cmathbf%7Bx%7D%2C%5Cmathbf%7Bz%7D%29)으로 p(x)를 나타낼 수 있다. 이러면 조건부 확률을 사용할 수 있으므로 EM 알고리즘도 사용 가능하게 된다. 
+        * 원래 식 (9.7)이 있지만 잠재변수를 사용하면 복잡한 혼합 모델 p(x) 대신 비교적 간단한 p(x,z)의 marginalization ![\sum_{ }_{z}\ p(\mathbf{x},\mathbf{z})](http://latex.codecogs.com/svg.latex?%5Csum_%7B%20%7D_%7Bz%7D%5C%20p%28%5Cmathbf%7Bx%7D%2C%5Cmathbf%7Bz%7D%29)으로 p(x)를 나타낼 수 있다. 이러면 조건부 확률을 사용할 수 있으므로 EM 알고리즘도 사용 가능하게 된다. 
         * 샘플을 생성하기 위해 우선 p(z) 분포에서 z 값을 생성하고 차례로 ancestral sampling을 수행한다. 이렇게 joint distribution p(x,z) = p(x|z)p(z)를 사용해 생성한 샘플 예제는 그림 (a)에서 확인할 수 있다.
         * 사족으로, 해당 문서 아래쪽에서 단순히 log-likelihood function 미분해서 파라미터를 구할 수 없는 경우(closed-form이 아니기 때문)를 봐두면 나중에 참고가 된다. 
     + latent variable을 도입하면 이 directed graphical model은 joint distribution p_theta(x,z)
 - 그러면 위 식을 이용해서 maximum likelihood를 계산하면 될까?
-    + ![\underset{\ }{arg}\ \underset{\theta}{max}[p_\theta(x) = \int_{z} p_\theta(x,z) = \int_{z} p_\theta(x|z)p_\theta(z)]](http://latex.codecogs.com/gif.latex?%5Cunderset%7B%5C%20%7D%7Barg%7D%5C%20%5Cunderset%7B%5Ctheta%7D%7Bmax%7D%5Bp_%5Ctheta%28x%29%20%3D%20%5Cint_%7Bz%7D%20p_%5Ctheta%28x%2Cz%29%20%3D%20%5Cint_%7Bz%7D%20p_%5Ctheta%28x%7Cz%29p_%5Ctheta%28z%29%5D)
+    + ![\underset{\ }{arg}\ \underset{\theta}{max}[p_\theta(x) = \int_{z} p_\theta(x,z) = \int_{z} p_\theta(x|z)p_\theta(z)]](http://latex.codecogs.com/svg.latex?%5Cunderset%7B%5C%20%7D%7Barg%7D%5C%20%5Cunderset%7B%5Ctheta%7D%7Bmax%7D%5Bp_%5Ctheta%28x%29%20%3D%20%5Cint_%7Bz%7D%20p_%5Ctheta%28x%2Cz%29%20%3D%20%5Cint_%7Bz%7D%20p_%5Ctheta%28x%7Cz%29p_%5Ctheta%28z%29%5D)
     + 하지만 모두 다 intractable해서 계산할 수가 없다. 
 - 그래서 parametric inference model q_\phi(z|x) 도입
     + variational inference : General family of methods for approximating complicated densities by a simpler class of densities
-    + variational parameter phi가 ![q_\phi(z|x) \approx p_\theta(z|x)](http://latex.codecogs.com/gif.latex?q_%5Cphi%28z%7Cx%29%20%5Capprox%20p_%5Ctheta%28z%7Cx%29) 요렇게 되도록 optimize한다. 
+    + variational parameter phi가 ![q_\phi(z|x) \approx p_\theta(z|x)](http://latex.codecogs.com/svg.latex?q_%5Cphi%28z%7Cx%29%20%5Capprox%20p_%5Ctheta%28z%7Cx%29) 요렇게 되도록 optimize한다. 
     + distribution q_\phi(z|x)를 neural network로 parameterize하면 아래와 같이 표현할 수 있다. 
-        * ![\begin{matrix} (\mu, log\ \sigma) = EncoderNeuralNet_\phi(\mathbf{x}) \\ q_\phi(\mathbf{z}|\mathbf{x}) = \mathcal{N}(\mathbf{z};\mu, diag(\sigma)) \end{matrix}](http://latex.codecogs.com/gif.latex?%5Cbegin%7Bmatrix%7D%20%28%5Cmu%2C%20log%5C%20%5Csigma%29%20%3D%20EncoderNeuralNet_%5Cphi%28%5Cmathbf%7Bx%7D%29%20%5C%5C%20q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29%20%3D%20%5Cmathcal%7BN%7D%28%5Cmathbf%7Bz%7D%3B%5Cmu%2C%20diag%28%5Csigma%29%29%20%5Cend%7Bmatrix%7D)
+        * ![\begin{matrix} (\mu, log\ \sigma) = EncoderNeuralNet_\phi(\mathbf{x}) \\ q_\phi(\mathbf{z}|\mathbf{x}) = \mathcal{N}(\mathbf{z};\mu, diag(\sigma)) \end{matrix}](http://latex.codecogs.com/svg.latex?%5Cbegin%7Bmatrix%7D%20%28%5Cmu%2C%20log%5C%20%5Csigma%29%20%3D%20EncoderNeuralNet_%5Cphi%28%5Cmathbf%7Bx%7D%29%20%5C%5C%20q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29%20%3D%20%5Cmathcal%7BN%7D%28%5Cmathbf%7Bz%7D%3B%5Cmu%2C%20diag%28%5Csigma%29%29%20%5Cend%7Bmatrix%7D)
 - 여기까지의 의식의 흐름은 다음과 같다. 궁극적으로 알고 싶은건 p*(x)를 근사하는 pθ(x)를 최대화하는 θ를 찾고 싶은건데 p(x)를 바로 알기는 어려우니 z 도입. 즉 pθ(x,z)를 알고 싶다는 얘기. p(x,z)는 prior*decoder 즉 p(z)p(x|z)인데 아무 z~p(z)나 넣으면 샘플 생성이 잘 안되더라. 그래서 샘플 생성을 잘 하는 z를 p(z|x)로 구하면 어떨까? 이게 인코더. 인코더에서 posterior pθ(z|x)를 구해야 하는데 이게 intractable이라서 이걸 qφ(z|x)로 approximate한다.  
 ![alt text][image_vae101]
 
 #### 2.2 The variational bound
-- marginal likelihood는 개별 datapoint들의 marginal likelihood의 합으로 구성된다. 즉 ![log\ p_\theta(\mathbf{x}^{(1)}, ... , \mathbf{x}^{(N)}) = \sum_{ }_{i=1}^{N}\ log\ p_\theta(\mathbf{x}^{(i)})](http://latex.codecogs.com/gif.latex?log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%281%29%7D%2C%20...%20%2C%20%5Cmathbf%7Bx%7D%5E%7B%28N%29%7D%29%20%3D%20%5Csum_%7B%20%7D_%7Bi%3D1%7D%5E%7BN%7D%5C%20log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%28i%29%7D%29)이며, 각 likelihood 식은 아래와 같이 전개된다. 
+- marginal likelihood는 개별 datapoint들의 marginal likelihood의 합으로 구성된다. 즉 ![log\ p_\theta(\mathbf{x}^{(1)}, ... , \mathbf{x}^{(N)}) = \sum_{ }_{i=1}^{N}\ log\ p_\theta(\mathbf{x}^{(i)})](http://latex.codecogs.com/svg.latex?log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%281%29%7D%2C%20...%20%2C%20%5Cmathbf%7Bx%7D%5E%7B%28N%29%7D%29%20%3D%20%5Csum_%7B%20%7D_%7Bi%3D1%7D%5E%7BN%7D%5C%20log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%28i%29%7D%29)이며, 각 likelihood 식은 아래와 같이 전개된다. 
 - ![alt text][image_vae01]
   + 수식 전개는 [활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 7 page 참고 
   + first RHS term: approximate와 true posterior의 KL divergence 
@@ -269,7 +269,7 @@ cGAN은 아래 연구들로 발전된다.
 
 #### 2.3 The SGVB estimator and AEVB algorithm (잘 모름)
 여기서는 approximate posterior가 qφ(z|x) 형태인데 위에서 살펴본 monte carlo gradient estimator는 x로 conditioned되지 않는 qφ(z)의 경우만에 적용될 수 있다는 점에 유의하라. 
-- 특정한 mild condition을 가정하면 approximate posterior qφ(z|x)를 위해서 미분 가능한 transformation gφ(e, x)를 사용하여 random variable ![\tilde{\mathbf{z}} \sim  q_\phi(\mathbf{z}|\mathbf{x})](http://latex.codecogs.com/gif.latex?%5Ctilde%7B%5Cmathbf%7Bz%7D%7D%20%5Csim%20q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29)를 reparameterizate할 수 있다. 여기서 e는 (auxiliary) noise variable. 
+- 특정한 mild condition을 가정하면 approximate posterior qφ(z|x)를 위해서 미분 가능한 transformation gφ(e, x)를 사용하여 random variable ![\tilde{\mathbf{z}} \sim  q_\phi(\mathbf{z}|\mathbf{x})](http://latex.codecogs.com/svg.latex?%5Ctilde%7B%5Cmathbf%7Bz%7D%7D%20%5Csim%20q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29)를 reparameterizate할 수 있다. 여기서 e는 (auxiliary) noise variable. 
 - 수식으로 나타내면 다음과 같다. 
 - ![alt text][image_vae04]
 - 이렇게 하면 이제 어떤 function f(z)의 expectation의 qφ(z|x)에 대한 monte carlo estimate를 아래와 같이 수행할 수 있다. 
