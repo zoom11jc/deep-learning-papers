@@ -259,21 +259,30 @@ cGAN은 아래 연구들로 발전된다.
 - 식 (2)를 다시 쓰면 아래와 같다. 
 - ![alt text][image_vae03]
   + 수식 전개는 ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 8 page 참고 
-  + ELBO를 이렇게 2가지 방식으로 전개한 이유 
-    * 식 (2)는 몬테카를로 estimation을 적용해야 하는 식 -> 샘플링하기 때문에 variance 증가 
-    * 식 (2)은 D_KL 항을 analytic하게 계산 가능하다. (단, q(z|x)와 p(z)를 잘 알려진 다루기 쉬운 분포로 가정하기 때문이다. 관련 내용은 ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 11 page 참고)
 - ELBO를 최대화하는 것은 2 가지를 측면을 동시에 optimize한다. 
   + pθ(x) 최대화: generative model이 점점 더 좋아진다.  
   + KL divergence 최소화: qφ(z|x)를 점점 pθ(z|x)와 비슷하게 하므로 qφ(z|x)가 점점 좋아진다.
   + ![Decomposition of log-likelihood 참고](http://sanghyukchun.github.io/70/)참고
-- 이제 ELBO를 variational parameter φ와 generative parameter θ에 대해 미분하고 최적화해보자. (![kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) 18 page 참고)
-  + ∇θELBO: ∇θ가 E항 안으로 들어갈 수 있기 때문에 수식이 간단해짐
-  + ∇φELBO: E가 qφ(z|x)에 대한 expectation이기 때문에 ∇φ가 E항 안으로 들어갈 수 없다. problematic -> reparameterization trick이 필요하다. 
+- 이제 ELBO를 두 파라미터(variational parameter φ와 generative parameter θ)에 대해 미분하고 최적화해보자. (![kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) 18 page 참고)
+  + ∇θELBO: simple.
+  + ∇φELBO: problematic. 이런 문제를 위한 monte carlo gradient estimator는 샘플링 때문에 high variance가 나타나며 impractical하다. -> reparameterization trick이 필요하다. 
 
-#### 2.3 The SGVB estimator and AEVB algorithm
+#### 2.3 The SGVB estimator and AEVB algorithm (잘 모름)
+여기서는 approximate posterior가 qφ(z|x) 형태인데 위에서 살펴본 monte carlo gradient estimator는 x로 conditioned되지 않는 qφ(z)의 경우만에 적용될 수 있다는 점에 유의하라. 
+- 특정한 mild condition을 가정하면 approximate posterior qφ(z|x)를 위해서 미분 가능한 transformation gφ(e, x)를 사용하여 random variable ![\tilde{\mathbf{z}} \sim  q_\phi(\mathbf{z}|\mathbf{x})](http://latex.codecogs.com/gif.latex?%5Ctilde%7B%5Cmathbf%7Bz%7D%7D%20%5Csim%20q_%5Cphi%28%5Cmathbf%7Bz%7D%7C%5Cmathbf%7Bx%7D%29)를 reparameterizate할 수 있다. 여기서 e는 (auxiliary) noise variable. 
+- 수식으로 나타내면 다음과 같다. 
+- ![alt text][image_vae04]
+- 이렇게 하면 이제 어떤 function f(z)의 expectation의 qφ(z|x)에 대한 monte carlo estimate를 아래와 같이 수행할 수 있다. 
+- ![alt text][image_vae05]
+- 이 테크닉을 수식 (2)에 적용하면 아래와 같이 generic Stochastic Gradient Variational Bayes(SBVB) estimator를 얻을 수 있다. 
+- ![alt text][image_vae06]
+- 이 테크닉을 수식 (3)에 적용하면 KL-divergence term 말고 expected reconstruction error term만 sampling으로 estimation하면 된다. 이때 KL-divergence term은 φ를 regularizing한다고 해석할 수 있다. 즉, approximate posterior qφ(z|x)를 pθ(z)에 가깝게 만든다. 
+- 여기서 식 (3)에 해당하는 두 번째 버전의 SGVB estimator가 아래와 같이 나온다. 보통은 이게 앞에서 본 generic estimator 보다 작은 variance를 갖는다. 
+- ![alt text][image_vae07]
+- 정리하면... ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 11 page 참고
 
-
-
-
+#### 2.4 The reparameterization trick
+- continuous latent variable과 미분가능하 encoder와 generative model이 있을 때, change of variables를 통해 ELBO는 θ와 φ에 대해 straightforward하게 미분가능해질 수 있다. 
+- ![kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) Figure 2.3 참고
 
 
