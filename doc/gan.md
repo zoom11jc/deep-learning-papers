@@ -160,7 +160,7 @@ cGAN은 아래 연구들로 발전된다.
 
 ## Auto-Encoding Variational Bayes
 
-- 문제제기: intractable posterior distribution을 가진 continuous latent variables와 large datasets가 있을 때 어떻게 directed probabilistic model에서 효율적인 inference and learning을 수행할 수 있을까?
+- 문제제기: continuous latent variables을 가진 intractable posterior distribution과 large datasets가 있을 때 어떻게 directed probabilistic model에서 효율적인 inference and learning을 수행할 수 있을까?
 
 - 제안하는것: stochastic variational inference and learning algorithm
     - large datasets로 확장 가능
@@ -230,7 +230,7 @@ cGAN은 아래 연구들로 발전된다.
         * minibatche data: stochastic gradient descent
 - latent variable model 상황이라면?
     + latent variable은 모델에서 사용되는 variable이지만 dataset에서는 관측할 수는 없기 때문에 latent variable이라고 말한다. 
-    + latent variable을 사용하는 이해하기 쉬운 사례로는 ![가우시안 혼합 모델](http://norman3.github.io/prml/docs/chapter09/2)이 있음.
+    + latent variable을 사용하는 이해하기 쉬운 사례로는 [가우시안 혼합 모델](http://norman3.github.io/prml/docs/chapter09/2)이 있음.
         * 원래 식 (9.7)이 있지만 잠재변수를 사용하면 복잡한 혼합 모델 p(x) 대신 비교적 간단한 p(x,z)의 marginalization ![\sum_{ }_{z}\ p(\mathbf{x},\mathbf{z})](http://latex.codecogs.com/gif.latex?%5Csum_%7B%20%7D_%7Bz%7D%5C%20p%28%5Cmathbf%7Bx%7D%2C%5Cmathbf%7Bz%7D%29)으로 p(x)를 나타낼 수 있다. 이러면 조건부 확률을 사용할 수 있으므로 EM 알고리즘도 사용 가능하게 된다. 
         * 샘플을 생성하기 위해 우선 p(z) 분포에서 z 값을 생성하고 차례로 ancestral sampling을 수행한다. 이렇게 joint distribution p(x,z) = p(x|z)p(z)를 사용해 생성한 샘플 예제는 그림 (a)에서 확인할 수 있다.
         * 사족으로, 해당 문서 아래쪽에서 단순히 log-likelihood function 미분해서 파라미터를 구할 수 없는 경우(closed-form이 아니기 때문)를 봐두면 나중에 참고가 된다. 
@@ -249,21 +249,21 @@ cGAN은 아래 연구들로 발전된다.
 #### 2.2 The variational bound
 - marginal likelihood는 개별 datapoint들의 marginal likelihood의 합으로 구성된다. 즉 ![log\ p_\theta(\mathbf{x}^{(1)}, ... , \mathbf{x}^{(N)}) = \sum_{ }_{i=1}^{N}\ log\ p_\theta(\mathbf{x}^{(i)})](http://latex.codecogs.com/gif.latex?log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%281%29%7D%2C%20...%20%2C%20%5Cmathbf%7Bx%7D%5E%7B%28N%29%7D%29%20%3D%20%5Csum_%7B%20%7D_%7Bi%3D1%7D%5E%7BN%7D%5C%20log%5C%20p_%5Ctheta%28%5Cmathbf%7Bx%7D%5E%7B%28i%29%7D%29)이며, 각 likelihood 식은 아래와 같이 전개된다. 
 - ![alt text][image_vae01]
-  + 수식 전개는 ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 7 page 참고 
+  + 수식 전개는 [활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 7 page 참고 
   + first RHS term: approximate와 true posterior의 KL divergence 
   + second RHS term: datapoint i의 marginal likelihood에 대한 (variational) lower bound라고도 하며, 베이지안에서 marginal likelihood를 model evidence라고 하므로 evidence lower bound(ELBO)라고도 한다. 
 - 고로 식 (1)은 아래와 같이 다시 쓸 수 있는데 
 - ![alt text][image_vae02]
   + 이렇게 하는 이유는 앞에서 봤듯이 pθ(x)에 직접 maximum likelihood를 적용할 수 없기 때문에 ELBO를 최대화 할것이다. L을 최대화하면 maximum likelihood도 최대화되겠지.
-  + 수식 전개는 ![pr12-vae](https://www.youtube.com/watch?v=KYA-GEhObIs)의 ELBO - eq(2) 부분 참고 
+  + 수식 전개는 [pr12-vae](https://www.youtube.com/watch?v=KYA-GEhObIs)의 ELBO - eq(2) 부분 참고 
 - 식 (2)를 다시 쓰면 아래와 같다. 
 - ![alt text][image_vae03]
-  + 수식 전개는 ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 8 page 참고 
+  + 수식 전개는 [활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 8 page 참고 
 - ELBO를 최대화하는 것은 2 가지를 측면을 동시에 optimize한다. 
   + pθ(x) 최대화: generative model이 점점 더 좋아진다.  
   + KL divergence 최소화: qφ(z|x)를 점점 pθ(z|x)와 비슷하게 하므로 qφ(z|x)가 점점 좋아진다.
-  + ![Decomposition of log-likelihood 참고](http://sanghyukchun.github.io/70/)참고
-- 이제 ELBO를 두 파라미터(variational parameter φ와 generative parameter θ)에 대해 미분하고 최적화해보자. (![kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) 18 page 참고)
+  + [Decomposition of log-likelihood 참고](http://sanghyukchun.github.io/70/)참고
+- 이제 ELBO를 두 파라미터(variational parameter φ와 generative parameter θ)에 대해 미분하고 최적화해보자. ([kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) 18 page 참고)
   + ∇θELBO: simple.
   + ∇φELBO: problematic. 이런 문제를 위한 monte carlo gradient estimator는 샘플링 때문에 high variance가 나타나며 impractical하다. -> reparameterization trick이 필요하다. 
 
@@ -279,10 +279,10 @@ cGAN은 아래 연구들로 발전된다.
 - 이 테크닉을 수식 (3)에 적용하면 KL-divergence term 말고 expected reconstruction error term만 sampling으로 estimation하면 된다. 이때 KL-divergence term은 φ를 regularizing한다고 해석할 수 있다. 즉, approximate posterior qφ(z|x)를 pθ(z)에 가깝게 만든다. 
 - 여기서 식 (3)에 해당하는 두 번째 버전의 SGVB estimator가 아래와 같이 나온다. 보통은 이게 앞에서 본 generic estimator 보다 작은 variance를 갖는다. 
 - ![alt text][image_vae07]
-- 정리하면... ![활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 11 page 참고
+- 정리하면... [활석님 자료](https://www.slideshare.net/NaverEngineering/ss-96581209)의 VAE 11 page 참고
 
 #### 2.4 The reparameterization trick
 - continuous latent variable과 미분가능하 encoder와 generative model이 있을 때, change of variables를 통해 ELBO는 θ와 φ에 대해 straightforward하게 미분가능해질 수 있다. 
-- ![kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) Figure 2.3 참고
+- [kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) Figure 2.3 참고
 
 
