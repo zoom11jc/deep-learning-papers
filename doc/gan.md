@@ -286,3 +286,6 @@ cGAN은 아래 연구들로 발전된다.
 - [kingma thesis](https://pure.uva.nl/ws/files/17891313/Thesis.pdf) Figure 2.3 참고
 
 
+## WaveGAN
+* PR12 발표 동영상: https://www.youtube.com/watch?v=UXVKSSXdwb8
+* 구현: https://github.com/chrisdonahue/wavegan/
