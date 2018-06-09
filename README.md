@@ -83,7 +83,7 @@
 * ProgressiveGAN: 
 * Improved GAN: 
 * WGAN: 
-* WaveGAN: ([note]("./paper/WaveGAN- Synthesizing Audio with Generative Adversarial Networks.pdf"), code)
+* WaveGAN: ([note](./paper/WaveGAN-%20Synthesizing%20Audio%20with%20Generative%20Adversarial%20Networks.pdf), code)
 
 
 ### Evaluation
