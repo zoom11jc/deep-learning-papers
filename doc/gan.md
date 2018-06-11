@@ -160,8 +160,8 @@ cGAN은 아래 연구들로 발전된다.
 
 ## InfoGAN
 * 참고자료
- * ppt: https://www.slideshare.net/ssuser2a5d00/infogan-paper-review
- * code https://github.com/1202kbs/InfoGAN-Tensorflow
+  * ppt: https://www.slideshare.net/ssuser2a5d00/infogan-paper-review
+  * code https://github.com/1202kbs/InfoGAN-Tensorflow
 
 
 
