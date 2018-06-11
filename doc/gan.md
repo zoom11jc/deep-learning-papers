@@ -158,6 +158,13 @@ cGAN은 아래 연구들로 발전된다.
 
 
 
+## InfoGAN
+* 참고자료
+ * ppt: https://www.slideshare.net/ssuser2a5d00/infogan-paper-review
+ * code https://github.com/1202kbs/InfoGAN-Tensorflow
+
+
+
 ## Auto-Encoding Variational Bayes
 
 - 문제제기: continuous latent variables을 가진 intractable posterior distribution과 large datasets가 있을 때 어떻게 directed probabilistic model에서 효율적인 inference and learning을 수행할 수 있을까?
