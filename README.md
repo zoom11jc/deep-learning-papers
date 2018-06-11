@@ -80,10 +80,11 @@
 * cGAN: Conditional Generative Adversarial Nets ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Conditional%20Generative%20Adversarial%20Nets.pdf), [code](./code/cgan.ipynb))
 * infoGAN: 
 * VAE ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/doc/gan.md#auto-encoding-variational-bayes), [code](./code/vae.ipynb))
-* ProgressiveGAN: 
-* Improved GAN: 
 * WGAN: 
+* Improved GAN: 
+* ProgressiveGAN: 
 * WaveGAN: ([note](./paper/WaveGAN-%20Synthesizing%20Audio%20with%20Generative%20Adversarial%20Networks.pdf), code)
+* CycleGAN: (note, code)
 
 
 ### Evaluation
