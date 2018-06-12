@@ -85,6 +85,7 @@
 * ProgressiveGAN: 
 * WaveGAN: ([note](./paper/WaveGAN-%20Synthesizing%20Audio%20with%20Generative%20Adversarial%20Networks.pdf), code)
 * CycleGAN: (note, code)
+* SNGAN: Spectral Normalization for Generative Adversarial Networks (note, code)
 
 
 ### Evaluation
