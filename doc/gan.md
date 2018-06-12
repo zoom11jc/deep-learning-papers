@@ -296,3 +296,10 @@ cGAN은 아래 연구들로 발전된다.
 ## WaveGAN
 * PR12 발표 동영상: https://www.youtube.com/watch?v=UXVKSSXdwb8
 * 구현: https://github.com/chrisdonahue/wavegan/
+
+
+
+## SNGAN
+* 논문: https://arxiv.org/abs/1802.05957
+* https://www.facebook.com/groups/TensorFlowKR/permalink/647420935598968/
+* http://keunwoochoi.blogspot.com/2018/01/spectral-normalization-for-generative.html
