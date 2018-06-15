@@ -52,7 +52,7 @@
 
 
 ### Semantic Segmentation
-
+* FCN: Fully Convolutional Networks for Semantic Segmentation (note, code)
 
 ### Siamese, Triplet Network
 * Triplet Network
@@ -78,6 +78,7 @@
 * GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), [code](./code/gan.ipynb))
 * DCGAN ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Unsupervised%20Representation%20Learning%20with%20Deep%20Convolutional%20Generative%20Adversarial%20Networks.pdf), [code1](./code/dcgan_mnist.ipynb), [code2](./code/dcgan_celebA.ipynb))
 * cGAN: Conditional Generative Adversarial Nets ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Conditional%20Generative%20Adversarial%20Nets.pdf), [code](./code/cgan.ipynb))
+* pix2pix: 
 * infoGAN: 
 * VAE ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/doc/gan.md#auto-encoding-variational-bayes), [code](./code/vae.ipynb))
 * WGAN: 
