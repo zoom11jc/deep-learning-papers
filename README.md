@@ -81,6 +81,7 @@
 * Improved GAN: 
 * ProgressiveGAN: 
 * SNGAN: Spectral Normalization for Generative Adversarial Networks (note, code)
+* CoGAN: Coupled Generative Adversarial Networks (note, code)
 * VAE ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/doc/gan.md#auto-encoding-variational-bayes), [code](./code/vae.ipynb))
 
 ### Image generation
