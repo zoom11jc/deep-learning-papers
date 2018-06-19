@@ -135,6 +135,7 @@
 * An overview of gradient descent optimization algorithms ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/An%20overview%20of%20gradient%20descent%20optimization%20algorithms.pdf))
 * Dropout:
 * Batch Normalization: ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
+* Spectral Norm Regularization for Improving the Generalizability of Deep Learning
 
 
 
