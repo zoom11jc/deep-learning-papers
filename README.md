@@ -77,10 +77,11 @@
 ### Models
 * GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), [code](./code/gan.ipynb))
 * DCGAN ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Unsupervised%20Representation%20Learning%20with%20Deep%20Convolutional%20Generative%20Adversarial%20Networks.pdf), [code1](./code/dcgan_mnist.ipynb), [code2](./code/dcgan_celebA.ipynb))
-* WGAN: 
+* WGAN: Wasserstein GAN ([note](./paper/Wasserstein%20GAN.pdf), code)
 * Improved GAN: 
 * ProgressiveGAN: 
-* SNGAN: Spectral Normalization for Generative Adversarial Networks (note, code)
+* SNGAN: Spectral Normalization for Generative Adversarial Networks ([note](./paper/Spectral%20Normalization%20for%20Generative%20Adversarial%20Networks.pdf), code)
+* SAGAN: 
 * CoGAN: Coupled Generative Adversarial Networks (note, code)
 * VAE ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/doc/gan.md#auto-encoding-variational-bayes), [code](./code/vae.ipynb))
 
