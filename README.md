@@ -52,7 +52,7 @@
 
 
 ### Semantic Segmentation
-
+* FCN: Fully Convolutional Networks for Semantic Segmentation (note, code)
 
 ### Siamese, Triplet Network
 * Triplet Network
@@ -77,14 +77,25 @@
 ### Models
 * GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), [code](./code/gan.ipynb))
 * DCGAN ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Unsupervised%20Representation%20Learning%20with%20Deep%20Convolutional%20Generative%20Adversarial%20Networks.pdf), [code1](./code/dcgan_mnist.ipynb), [code2](./code/dcgan_celebA.ipynb))
-* cGAN: Conditional Generative Adversarial Nets ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Conditional%20Generative%20Adversarial%20Nets.pdf), [code](./code/cgan.ipynb))
-* infoGAN: 
-* VAE ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/doc/gan.md#auto-encoding-variational-bayes), [code](./code/vae.ipynb))
-* ProgressiveGAN: 
-* Improved GAN: 
 * WGAN: 
-* WaveGAN: ([note](./paper/WaveGAN- Synthesizing Audio with Generative Adversarial Networks.pdf), code)
+* Improved GAN: 
+* ProgressiveGAN: 
+* SNGAN: Spectral Normalization for Generative Adversarial Networks (note, code)
+* CoGAN: Coupled Generative Adversarial Networks (note, code)
+* VAE ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/doc/gan.md#auto-encoding-variational-bayes), [code](./code/vae.ipynb))
 
+### Image generation
+* cGAN: Conditional Generative Adversarial Nets ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Conditional%20Generative%20Adversarial%20Nets.pdf), [code](./code/cgan.ipynb))
+* pix2pix: 
+* infoGAN: 
+* CycleGAN: (note, code)
+* BicycleGAN
+* MUNIT
+* iGAN
+
+### NLP, Speech
+* WaveGAN: ([note](./paper/WaveGAN-%20Synthesizing%20Audio%20with%20Generative%20Adversarial%20Networks.pdf), code)
+* SeqGAN:
 
 ### Evaluation
 * A note on the evaluation of generative models
@@ -124,6 +135,7 @@
 * An overview of gradient descent optimization algorithms ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/An%20overview%20of%20gradient%20descent%20optimization%20algorithms.pdf))
 * Dropout:
 * Batch Normalization: ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
+* Spectral Norm Regularization for Improving the Generalizability of Deep Learning
 
 
 

@@ -158,6 +158,13 @@ cGAN은 아래 연구들로 발전된다.
 
 
 
+## InfoGAN
+* 참고자료
+  * ppt: https://www.slideshare.net/ssuser2a5d00/infogan-paper-review
+  * code https://github.com/1202kbs/InfoGAN-Tensorflow
+
+
+
 ## Auto-Encoding Variational Bayes
 
 - 문제제기: continuous latent variables을 가진 intractable posterior distribution과 large datasets가 있을 때 어떻게 directed probabilistic model에서 효율적인 inference and learning을 수행할 수 있을까?
@@ -289,3 +296,25 @@ cGAN은 아래 연구들로 발전된다.
 ## WaveGAN
 * PR12 발표 동영상: https://www.youtube.com/watch?v=UXVKSSXdwb8
 * 구현: https://github.com/chrisdonahue/wavegan/
+
+
+
+## WGAN
+- Wasserstein distance
+  - wgan 수학 이해하기: https://www.slideshare.net/ssuser7e10e4/wasserstein-gan-i
+  - gan to wgan: https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html
+  - http://dogfoottech.tistory.com/185
+  - wasserstein 거리: https://rosinality.github.io/2017/04/wasserstein-%EA%B1%B0%EB%A6%AC/
+
+- Lipschitz Continuity
+  - 연속성의 종류: http://mathnmath.tistory.com/42
+  - 갑자기 왜 Lipschitz continuity가 나온걸까? convex optimization 때문: http://sanghyukchun.github.io/63/
+
+- Kantorovich-Rubinstein Duality
+  - https://vincentherrmann.github.io/blog/wasserstein/
+
+
+## SNGAN
+* 논문: https://arxiv.org/abs/1802.05957
+* https://www.facebook.com/groups/TensorFlowKR/permalink/647420935598968/
+* http://keunwoochoi.blogspot.com/2018/01/spectral-normalization-for-generative.html
