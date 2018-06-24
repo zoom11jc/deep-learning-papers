@@ -315,6 +315,27 @@ cGAN은 아래 연구들로 발전된다.
 
 
 ## SNGAN
-* 논문: https://arxiv.org/abs/1802.05957
-* https://www.facebook.com/groups/TensorFlowKR/permalink/647420935598968/
-* http://keunwoochoi.blogspot.com/2018/01/spectral-normalization-for-generative.html
+논문 설명 
+ - http://jaejunyoo.blogspot.com/2018/05/paper-skim-spectral-normalization-for-gan.html
+ - http://keunwoochoi.blogspot.com/2018/01/spectral-normalization-for-generative.html
+ - https://www.youtube.com/watch?v=iXSYqohGQhM
+
+matrix norm 관련 
+ - wikipedia: https://en.wikipedia.org/wiki/Matrix_norm#Special_Cases
+ - https://www.math.uh.edu/~jingqiu/math4364/iterative_linear_system.pdf
+ - https://www.youtube.com/watch?v=UtNPmGw60jg
+ - https://www.youtube.com/watch?v=WPMY_ufrmzI
+ - https://www.youtube.com/watch?v=pgJ2Sg1jcYQ
+
+Lipschitz 관련 
+ - http://sanghyukchun.github.io/63/
+ - http://users.ece.utexas.edu/~cmcaram/EE381V_2012F/Lecture_4_Scribe_Notes.final.pdf
+ - 동영상 
+    + https://www.youtube.com/watch?v=Cnc83B3C2pY
+    + https://www.youtube.com/watch?v=_MKhnZ_n3PY
+    + https://www.youtube.com/watch?v=yzRDBw1bSV0
+    + https://www.youtube.com/watch?v=sv1R8gualO8
+    + https://www.youtube.com/watch?v=5VK5-KfYXDI
+    + https://www.youtube.com/watch?v=GMiOPeqAwlw
+    + https://www.youtube.com/watch?v=VpYyGfs0SdA
+    + https://www.youtube.com/watch?v=pI9faLfYrH8
