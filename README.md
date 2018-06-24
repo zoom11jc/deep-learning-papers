@@ -77,10 +77,10 @@
 ### Models
 * GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), [code](./code/gan.ipynb))
 * DCGAN ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Unsupervised%20Representation%20Learning%20with%20Deep%20Convolutional%20Generative%20Adversarial%20Networks.pdf), [code1](./code/dcgan_mnist.ipynb), [code2](./code/dcgan_celebA.ipynb))
-* WGAN: Wasserstein GAN ([note](./paper/Wasserstein%20GAN.pdf), code)
+* WGAN: Wasserstein GAN ([note(진행중)](./paper/Wasserstein%20GAN.pdf), code)
 * Improved GAN: 
 * ProgressiveGAN: 
-* SNGAN: Spectral Normalization for Generative Adversarial Networks ([note](./paper/Spectral%20Normalization%20for%20Generative%20Adversarial%20Networks.pdf), code)
+* SNGAN: Spectral Normalization for Generative Adversarial Networks ([note(진행중)](./paper/Spectral%20Normalization%20for%20Generative%20Adversarial%20Networks.pdf), code)
 * SAGAN: 
 * CoGAN: Coupled Generative Adversarial Networks (note, code)
 * VAE ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/doc/gan.md#auto-encoding-variational-bayes), [code](./code/vae.ipynb))
@@ -136,7 +136,7 @@
 * An overview of gradient descent optimization algorithms ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/An%20overview%20of%20gradient%20descent%20optimization%20algorithms.pdf))
 * Dropout:
 * Batch Normalization: ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
-* Spectral Norm Regularization for Improving the Generalizability of Deep Learning
+* Spectral Norm Regularization for Improving the Generalizability of Deep Learning ([note(진행중)](./paper/Spectral%20Norm%20Regularization%20for%20Improving%20the%20Generalizability%20of%20Deep%20Learning.pdf), code)
 
 
 
