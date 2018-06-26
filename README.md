@@ -1,6 +1,6 @@
 # deep-learning-papers
 
-## Computer Vision
+## 1. Computer Vision
 ### CNN Architecture
 * AlexNet: ImageNet Classification with Deep Convolutional Neural Networks
 * ZFNet (DeconvNet): Visualizing and Understanding Convolutional Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Visualizing%20and%20Understanding%20Convolutional%20Networks.pdf), code)
@@ -72,7 +72,7 @@
 * A guide to convolution arithmetic for deep learning ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.pdf))
 
 
-## [GAN](./doc/gan.md)
+## 2. [GAN](./doc/gan.md)
 
 ### Models
 * GAN: Generative Adversarial Networks ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Generative%20Adversarial%20Networks.pdf), [code](./code/gan.ipynb))
@@ -103,8 +103,10 @@
 * A Note on the Inception Score
 
 
+## 3. Geometric Deep Learning
 
-## NLP
+
+## 4. NLP
 * Recent Trends in Deep Learning Based Natural Language Processing ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Recent%20Trends%20in%20Deep%20Learning%20Based%20Natural%20Language%20Processing.pdf))
 
 ### RNN Architecture
@@ -131,28 +133,8 @@
 
 ### Word Embedding
 
-
-## Optimization, Regularization, Attention
+## 5. Optimization, Regularization
 * An overview of gradient descent optimization algorithms ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/An%20overview%20of%20gradient%20descent%20optimization%20algorithms.pdf))
 * Dropout:
 * Batch Normalization: ([note](https://github.com/bt22dr/deep-learning-papers/blob/master/paper/Batch%20Normalization-%20Accelerating%20Deep%20Network%20Training%20b%20y%20Reducing%20Internal%20Covariate%20Shift.pdf), code)
 * Spectral Norm Regularization for Improving the Generalizability of Deep Learning ([note(진행중)](./paper/Spectral%20Norm%20Regularization%20for%20Improving%20the%20Generalizability%20of%20Deep%20Learning.pdf), code)
-
-
-
-
-
----
-
-## TODO list
-* AttentionNet- Aggregating Weak Directions for Accurate Object Detection
-* DeCAF - A Deep Convolutional Activation Feature for Generic Visual Recognition
-* CAM 관련 - From Image-level to Pixel-level Labeling with Convolutional Networks
-* Fully Convolutional Networks for Semantic Segmentation
-* Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs
-* DeViSE: A Deep Visual-Semantic Embedding Model -> cGAN
-* cGAN -> Generative Adversarial Text to Image Synthesis
-* cGAN -> Pix2Pix
-* Multimodal Compact Bilinear Pooling for VQA 
-
-
